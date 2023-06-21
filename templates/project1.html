@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-YjfEODFDywp/1M41XYg2+dwbHUMIEyfO9F45VWL7Y2BCT39NMSKqJImhZHdeNzWsxHyKSH8ZiYiG0bsWb4F5sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project1.css') }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="navBar">
+        <a href="{{ url_for('main') }}" class="split">Steven Duchene</a>
+        <a href="{{ url_for('main') }}#contact">Me contacter</a>
+        <a href="{{ url_for('main') }}#project">Projets</a>
+        <a href="{{ url_for('main') }}#skills">Compétences</a>
+        <a href="{{ url_for('main') }}#about">À propos</a>
+      </div> 
+
+    <div class="content">
+        <h1>INF1900 : Projet initial de système embarqué</h1>
+        <p>Le premier projet sur lequel j'ai eu la chance de travailler avec comme but la programmation d'un robot mobile autonome. 
+            L'objectif principal était d'utiliser les capteurs du robot pour détecter les rubans de couleur noire sur une table blanche, représentant plusieurs chemins potentiels. Notre défi était de développer un code robuste et efficace qui permettrait au robot de se déplacer du point A au point B en ajustant automatiquement l'accélération, la décélération et la rotation des roues.
+            <br><br>Dans le cadre de ce projet, j'ai eu l'opportunité de : <br>
+        <ul>
+            <li>Maîtriser les étapes de la réalisation d'un système matériel-logiciel. J'ai travaillé en étroite collaboration avec mon équipe pour concevoir et mettre en œuvre une solution intégrée. Cela impliquait la compréhension du matériel du robot, la programmation des capteurs, ainsi que l'optimisation des algorithmes de détection et de mouvement.</li><br>
+            <li>Présenter le projet à un jury et à un public. Nous avons dû expliquer notre approche, nos résultats et les défis rencontrés tout au long du processus de développement.</li>                
+        </ul>    
+        <p>De plus, ce projet m'a également permis d'utiliser des outils de développement logiciel de base tels que Makefile, des bibliothèques logicielles et d'entrepôt comme Git. </p>
+    </div>
+
+    <div class="arrows-container">
+      <a href="{{ url_for('main') }}#project"><i class="fas fa-chevron-left arrow-left"></i></a>
+      <a href="{{ url_for('project2') }}"><i class="fas fa-chevron-right arrow-right"></i></a>
+    </div>
+  </body>
+</html>

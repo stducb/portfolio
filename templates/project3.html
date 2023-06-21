@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-YjfEODFDywp/1M41XYg2+dwbHUMIEyfO9F45VWL7Y2BCT39NMSKqJImhZHdeNzWsxHyKSH8ZiYiG0bsWb4F5sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project1.css') }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="navBar">
+        <a href="{{ url_for('main') }}" class="split">Steven Duchene</a>
+        <a href="{{ url_for('main') }}#contact">Me contacter</a>
+        <a href="{{ url_for('main') }}#project">Projets</a>
+        <a href="{{ url_for('main') }}#skills">Compétences</a>
+        <a href="{{ url_for('main') }}#about">À propos</a>
+      </div> 
+
+    <div class="content">
+        <h1>INF3995 : Projet de conception d'un système informatique</h1>
+        <p>Le projet visait à concevoir un système d'exploration automatique pour un essaim de drones miniatures. Pendant l'exploration, chaque drone devait envoyer sa position dans le but de creer une carte representant l'exploration des drones en temps reel. Pour atteindre cet objectif, un client Web a du être développé afin de communiquer avec les drones et un environnement de simulation. L'architecture generale du projet est la suivante:
+        <ul>
+          <li> Le serveur est le système central du projet. Il utilise le framework Flask pour gérer les requêtes et effectuer le traitement des données. Le serveur communique avec tous les autres systèmes. Il utilise MongoEngine pour échanger des données avec la base de données MongoDB en utilisant le protocole TCP/IP Sockets. Il communique avec les drones physiques à l'aide de la librairie cflib fournie par Bitcraze et la Crazyflie Radio PA en utilisant le protocole CRTP. Il communique également avec la simulation ARGoS par des sockets TCP et avec le client par le protocole HTTP.</li>
+          <br>
+          <li> Le client utilise ReactJS, pour créer l'interface utilisateur avec laquelle l'utilisateur interagit.</li>
+          <br>
+          <li> La simulation ARGoS est mise en œuvre en utilisant l'API et les modules fournis par ARGoS. </li>
+          <br>
+          <li> La partie embarquée est gérée en utilisant le firmware Crazyflie fourni par Bitcraze.  </li>
+          <br>
+          <li> Afin d'acceder aux cartes crees par l'exploration des drones, nous utilisons une base de données MongoDB qui est hébergée sur le service MongoDB Atlas.</li>
+        </ul>
+        <br>Dans le cadre de ce projet, j'ai eu l'opportunité de : <br>
+        <ul>
+            <li>Programmer et simuler les drones Crazyflie pour qu’ils détectent leur
+              environnement de façon autonome
+              </li><br>
+            <li>Développer une page web pour permettre le contrôle des drones</li><br>
+            <li>Coordonner le projet dans une équipe de six personnes </li>             
+        </ul>    
+        <br>
+        <p>Les principales technologies utilisées dans le développement du projet etaient Docker, MongoDB, Flask, React, Python, C, C++, Javascript, CSS.</p>
+    
+    </div>
+
+    <div class="arrows-container">
+      <a href="{{ url_for('project2') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
+      <a href="{{ url_for('project4') }}"><i class="fas fa-chevron-right arrow-right"></i></a>
+    </div>
+  </body>
+</html>

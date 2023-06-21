@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar {
+  background-color: rgb(231, 231, 176);
+  overflow: hidden;
+  position: fixed; /* Changed: Set position to fixed */
+  width: 100%;
+  top: 0;
+  
+}
+
+.navBar a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navBar a.split {
+  float: left;
+  color: black;
+}
+
+.navBar a:hover {
+  background-color: #141313;
+  color: white;
+}
+
+.navBar a.split:hover {
+  background-color: #141313;
+  color: white;
+}
+
+.content {
+  width: 70%; 
+  height: 90%;
+  border-radius: 5%;
+  background-color: beige;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.arrows-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.arrow-left,
+.arrow-right {
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
