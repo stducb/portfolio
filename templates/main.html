@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/archivo-black" rel="stylesheet">
+                
   </head>
   <body>
     <div class="navBar">
-      <a href="#home" class="split">Steven Duchene</a>
+      <a href="#home" class="split">Steven Duchene </a>
       <a href="#contact">Me contacter</a>
       <a href="#project">Projets</a>
       <a href="#skills">Compétences</a>
@@ -18,13 +20,12 @@
 
     <div class="home" id="home">
       <h1>STEVEN DUCHENE</h1>
-      <p>INGÉNIEUR INFORMATIQUE</p>
-      <a href="#contact"><button>ME CONTACTER</button></a>
+      <p>BACHELIER EN INGÉNIERIE INFORMATIQUE</p>
     </div>
 
     <div class="about" id="about">
       <h1>À PROPOS DE MOI</h1>
-      <p>Je suis un ingénieur informatique passionné, animé par une soif insatiable d'apprendre</p>
+      <p>Je suis un gradué en ingénierie informatique à Polytechnique Montréal passionné par la technologie et animé par une soif insatiable d'apprendre.</p>
       <p>Ce qui me distingue, c'est ma rapidité d'apprentissage. Je suis capable d'absorber de nouvelles informations rapidement et de les appliquer de manière créative. Que ce soit pour maîtriser de nouveaux langages de programmation, explorer de nouveaux cadres de développement ou comprendre les dernières avancées technologiques, je suis toujours prêt à relever le défi et à m'adapter rapidement.</p>
       <p>Mes intérêts couvrent un large éventail de domaines, allant de l'intelligence artificielle et des technologies de pointe à ma passion pour les jeux vidéo. Mais ma vie ne se limite pas à la technologie. Je suis également passionné par le sport, l'amélioration personnelle et l'activité physique.</p>
       <a class="resume" href="/static/images/CV.pdf" download> Résumé </a>
@@ -40,10 +41,11 @@
         <img src="{{ url_for('static', filename='images/css.jpg') }}">
         <img src="{{ url_for('static', filename='images/javascript.jpg') }}">
         <img src="{{ url_for('static', filename='images/typescript.jpg') }}">
-        <img src="{{ url_for('static', filename='images/flask.jpg') }}">
+        
       </div>
       <div class="text">J'ai aussi travaillé avec:</div>
       <div class="icons2">
+        <img src="{{ url_for('static', filename='images/flask.jpg') }}">
         <img src="{{ url_for('static', filename='images/docker.jpg') }}">
         <img src="{{ url_for('static', filename='images/angular.jpg') }}">
         <img src="{{ url_for('static', filename='images/nodejs.jpg') }}">
@@ -68,6 +70,7 @@
     <div class="project" id="project">
       <h1>MES PROJETS</h1>
       <p>Durant mon parcours universitaire, j'ai eu la chance de participer à quatre projets majeurs qui ont été extrêmement enrichissants. Ces projets m'ont permis de mettre en pratique les connaissances acquises au cours de mon baccalauréat et de développer des compétences concrètes dans des domaines spécifiques. Chaque projet a représenté une opportunité de travailler en équipe, de relever des défis techniques et de contribuer à la réalisation d'objectifs importants.</p>
+      <h2>Mes projets académiques</h2>
       <div class="projects">
         <div class="project1">
           <a href="{{ url_for('project1') }}">
@@ -102,6 +105,19 @@
           <p class="project-title">Flask, Python, Docker | Hiver 2023</p>
         </div>
       </div>
+
+      <h2>Mes projets personnels</h2>
+      <div class="projects">
+        <div class="project5">
+          <a href="{{ url_for('project5') }}">
+            <img src="{{ url_for('static', filename='images/PI5.jpg') }}">
+          </a>
+      
+          <h1 class="project-title">Portfolio</h1>
+          <p class="project-title">HTML, CSS, Python, Flask | Été 2023</p>
+        </div>
+      </div>
+      
       
     </div>   
     

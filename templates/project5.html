@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-YjfEODFDywp/1M41XYg2+dwbHUMIEyfO9F45VWL7Y2BCT39NMSKqJImhZHdeNzWsxHyKSH8ZiYiG0bsWb4F5sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project1.css') }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  </head>
+  <body>
+    <div class="navBar">
+        <a href="{{ url_for('main') }}" class="split">Steven Duchene</a>
+        <a href="{{ url_for('main') }}#contact">Me contacter</a>
+        <a href="{{ url_for('main') }}#project">Projets</a>
+        <a href="{{ url_for('main') }}#skills">Compétences</a>
+        <a href="{{ url_for('main') }}#about">À propos</a>
+      </div> 
+
+    <div class="content">
+        <h1>Creation d'un Portfolio</h1>
+        <p>Le projet avait pour objectif de pouvoir demontrer mon savoir-faire et mes compétences</p>
+        <br>Les technologies suivantes ont ete utilisées: <br>
+        <ul>
+            <li>Flask et Python pour créer l'application web.</li><br>
+            <li>HTML et CSS afin de créer la structure des pages et modifier l'apparence des contenus</li><br>        
+          </ul>        
+    </div>
+
+    <div class="arrows-container">
+      <a href="{{ url_for('project4') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
+      <a href="{{ url_for('main')}}#project "><i class="fas fa-chevron-right arrow-right"></i></a>
+    </div>
+  </body>
+</html>

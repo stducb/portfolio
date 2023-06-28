@@ -22,5 +22,9 @@ def project3():
 def project4():
     return render_template("project4.html")
 
+@app.route('/project5')
+def project5():
+    return render_template("project5.html")
+
 if __name__ == "__main__":
     app.run(host='192.168.0.191', port=5000, debug=True)

@@ -1,210 +1,165 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: #FFF;
+   margin: 0;
+   padding: 0;
+   background-color: white;
+   color: #FFF;
+}
+
+body h1 {
+   font-family: 'Archivo Black', sans-serif;
+}
+
+body p, ul, div {
+   font-family: 'Roboto', sans-serif;
 }
 
 .navBar {
-    background-color: rgb(231, 231, 176);
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    top: 0;
+   background-color: rgb(231, 231, 176);
+   overflow: hidden;
+   position: fixed;
+   width: 100%;
+   top: 0;
 }
 
 .navBar a {
-    float: right;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+   float: right;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
 }
 
 .navBar a.split {
-    float: left;
+   float: left;
 }
 
 .navBar a:hover,
 .navBar a.split:hover {
-    background-color: #141313;
-    color: white;
+   background-color: #141313;
+   color: white;
 }
 
 .home {
-    font-family: 'Roboto', sans-serif;
-    background-image: url(../images/background.png);
-    background-size: cover;
-    color: black;
-    padding-top: 15%;
-    padding-left: 15%;
-    padding-bottom: 25%;
-    margin-top: 22px;
-}
-
-.home button,
-.resume {
-    background-image: linear-gradient(#8614f8, #760be0);
-    border-radius: 5px;
-    border-style: none;
-    box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
-    color: #000;
-    cursor:pointer;
-    display:inline-block;
-    font-family:'Roboto', sans-serif;
-    font-size:16px;
-    font-weight:500;
-    outline:none;
-    text-align:center;
-    transition:all .3s cubic-bezier(.05,.03,.35,1);
-    user-select:none; 
-   -webkit-user-select:none; 
-   touch-action:manipulation; 
-   vertical-align:bottom; 
-   margin-right:2%;
-}
-
-.home button {
-   height:60px; 
-   line-height:60px; 
-   width:190px; 
-   margin-left:-4px; 
-}
-
-.home button:hover {
-   opacity:.7; 
+   background-color: rgb(32, 32, 92);
+   color: rgb(255, 255, 255);
+   padding-top: 15%;
+   padding-left: 15%;
+   padding-bottom: 25%;
+   margin-top: 22px;
 }
 
 .resume {
-   height:40px; 
-   line-height:40px; 
-   width:100px; 
-   margin-left:-4px; 
+   background-color: rgb(231, 231, 176);
+   border-radius: 5px;
+   border-style: none;
+   box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
+   color: #000;
+   cursor: pointer;
+   display: inline-block;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   outline: none;
+   text-align: center;
+   transition: all .3s cubic-bezier(.05, .03, .35, 1);
+   user-select: none; 
+   -webkit-user-select: none; 
+   touch-action: manipulation; 
+   vertical-align: bottom; 
+   margin-right: 2%;
+   height: 40px; 
+   line-height: 40px; 
+   width: 100px; 
+   margin-left: -4px; 
 }
 
 .about,
 .skills,
 .project {
-   background-color:#f7f7f7; 
-   color:black; 
-   padding-left:15%; 
-   padding-bottom:15%; 
-   padding-top:10%; 
+   background-color: #f7f7f7; 
+   color: black; 
+   padding-left: 15%; 
+   padding-bottom: 15%; 
+   padding-top: 10%; 
 }
 
 .about,
 .project,
 .skills {
-   text-align : justify; 
-   padding-right :15%; 
+   text-align: justify; 
+   padding-right: 15%; 
 }
 
-.about h1{
-   color:black; 
+.about h1 {
+   color: black; 
+}
+
+.skills {
+   background-color: rgb(32, 32, 92);
+   color: white;
 }
 
 .skills .icons1,
-.skills .icons2{
+.skills .icons2 {
    display: flex;
    justify-content: space-between;
    padding-bottom: 5%;
    padding-top: 5%;
 }
 
-.skills .icons1 img{
-   width :50px; 
-   height :50px;  
+.skills .icons1 img {
+   width: 50px; 
+   height: 50px;  
 }
 
-.skills .icons2 img{
-   width :80px; 
-   height :80px;  
+.skills .icons2 img {
+   width: 80px; 
+   height: 80px;  
 }
 
-.project .projects{
-   display:flex; 
+.project .projects,
+.project .personalProjects {
+   display: flex; 
    flex-wrap: wrap;
-   justify-content : space-between; 
-   text-align:left;  
-   font-size : small; 
-   font-family:'Roboto', sans-serif; 
+   justify-content: space-between; 
+   text-align: left;  
+   font-size: small; 
+   font-family: 'Roboto', sans-serif; 
 }
 
-.projects img{
-   width :300px; 
-   height :200px;  
+.projects img,
+.personalProjects img {
+   width: 300px; 
+   height: 200px;  
 }
-  
+
 .project-title {
-    width: 300px;
+   width: 300px;
 }
 
-  
-.projects img:hover{
-   opacity:.8;  
+.projects img:hover {
+   opacity: 0.8;  
 }
 
-
-
-form{
-   display:flex;  
-   flex-direction : column ;  
-   max-width :400px ;  
-   margin :0 ;  
+.contact {
+   color: black;
+   display: flex;
+   text-align: center;
+   background-color: rgb(231, 231, 176);
+   overflow: hidden;
+   width: 100%;
 }
 
-label{
-   margin-bottom :20px ;  
-}
-
-span{
-   display:block ;  
-   margin-bottom :5px ;  
-}
-
-input,
-textarea{
-padding :10px ;  
-width :100% ;  
-border :1px solid #760be0 ;  
-border-radius :5px ;  
-resize :vertical ;  
-color:#FFF ;  
-background-color:#2E204E ;  
-}
-
-button{
-background-color:#760be0 ;  
-color:#FFF ;  
-padding :10px 20px ;  
-border:none ;  
-border-radius :5px ;  
-cursor:pointer ;  
-}
-
-button:hover{
-background-color:#8614f8 ;   
-}
-
-
-.contact{
-color:black ;
-display:flex ;
-text-align:center ;
-background-color :rgb(231,231,176) ;
-overflow:hidden ;
-width :100% ;
-}
-.contact p{
-padding-left :1% ;
+.contact p {
+   padding-left: 1%;
 }
 
 .contact a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+   float: left;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
 }
