@@ -56,6 +56,11 @@ body {
   text-align: center;
 }
 
+.content img{
+  width: 100px;
+  height: 30px
+}
+
 .arrows-container {
   position: fixed;
   bottom: 20px;
