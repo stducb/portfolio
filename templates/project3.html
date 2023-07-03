@@ -18,37 +18,36 @@
         <a href="{{ url_for('main') }}#about">À propos</a>
       </div> 
 
+      <div class="project">
+        <h1>PROJET ACADÉMIQUE</h1>
+      </div>
+      
     <div class="content">
-        <h1>INF3995 : Projet de conception d'un système informatique</h1>
-        <p>Le projet visait à concevoir un système d'exploration automatique pour un essaim de drones miniatures. Pendant l'exploration, chaque drone devait envoyer sa position dans le but de creer une carte representant l'exploration des drones en temps reel. Pour atteindre cet objectif, un client Web a du être développé afin de communiquer avec les drones et un environnement de simulation. L'architecture generale du projet est la suivante:
-        <ul>
-          <li> Le serveur est le système central du projet. Il utilise le framework Flask pour gérer les requêtes et effectuer le traitement des données. Le serveur communique avec tous les autres systèmes. Il utilise MongoEngine pour échanger des données avec la base de données MongoDB en utilisant le protocole TCP/IP Sockets. Il communique avec les drones physiques à l'aide de la librairie cflib fournie par Bitcraze et la Crazyflie Radio PA en utilisant le protocole CRTP. Il communique également avec la simulation ARGoS par des sockets TCP et avec le client par le protocole HTTP.</li>
-          <br>
-          <li> Le client utilise ReactJS, pour créer l'interface utilisateur avec laquelle l'utilisateur interagit.</li>
-          <br>
-          <li> La simulation ARGoS est mise en œuvre en utilisant l'API et les modules fournis par ARGoS. </li>
-          <br>
-          <li> La partie embarquée est gérée en utilisant le firmware Crazyflie fourni par Bitcraze.  </li>
-          <br>
-          <li> Afin d'acceder aux cartes crees par l'exploration des drones, nous utilisons une base de données MongoDB qui est hébergée sur le service MongoDB Atlas.</li>
-        </ul>
-        <br>Dans le cadre de ce projet, j'ai eu l'opportunité de : <br>
-        <ul>
-            <li>Programmer et simuler les drones Crazyflie pour qu’ils détectent leur
-              environnement de façon autonome
-              </li><br>
-            <li>Développer une page web pour permettre le contrôle des drones</li><br>
-            <li>Coordonner le projet dans une équipe de six personnes </li>             
-        </ul>    </p>
-        <br>
-        <p>Les principales technologies utilisées dans le développement du projet etaient Docker, MongoDB, Flask, React, Python, C, C++, Javascript, CSS.</p>
-        <a class="resume" href="/static/images/RapportFinalP3.pdf" download> Télécharger le rapport </a>
-        
+      <h1>INF3995 : Projet de conception d'un système informatique</h1>
+      <p>Le projet visait à concevoir un système d'exploration automatique pour un essaim de drones miniatures. Pendant l'exploration, chaque drone devait envoyer sa position dans le but de créer une carte représentant l'exploration des drones en temps réel. Pour atteindre cet objectif, un client Web a dû être développé afin de communiquer avec les drones et un environnement de simulation. L'architecture générale du projet est la suivante :</p>
+      <ul class="spaced-list">
+        <li>Le serveur est le système central du projet. Il utilise le framework Flask pour gérer les requêtes et effectuer le traitement des données. Le serveur communique avec tous les autres systèmes. Il utilise MongoEngine pour échanger des données avec la base de données MongoDB en utilisant le protocole TCP/IP Sockets. Il communique avec les drones physiques à l'aide de la librairie cflib fournie par Bitcraze et la Crazyflie Radio PA en utilisant le protocole CRTP. Il communique également avec la simulation ARGoS par des sockets TCP et avec le client par le protocole HTTP.</li>
+        <li>Le client utilise ReactJS pour créer l'interface utilisateur avec laquelle l'utilisateur interagit.</li>
+        <li>La simulation ARGoS est mise en œuvre en utilisant l'API et les modules fournis par ARGoS.</li>
+        <li>La partie embarquée est gérée en utilisant le firmware Crazyflie fourni par Bitcraze.</li>
+        <li>Afin d'accéder aux cartes créées par l'exploration des drones, nous utilisons une base de données MongoDB qui est hébergée sur le service MongoDB Atlas.</li>
+      </ul>
+      <p>Dans le cadre de ce projet, j'ai eu l'opportunité de :</p>
+      <ul class="spaced-list">
+        <li>Programmer et simuler les drones Crazyflie pour qu'ils détectent leur environnement de façon autonome.</li>
+        <li>Développer une page web pour permettre le contrôle des drones.</li>
+        <li>Coordonner le projet au sein d'une équipe de six personnes.</li>
+      </ul>
+      <p>Les principales technologies utilisées dans le développement du projet étaient Docker, MongoDB, Flask, React, Python, C, C++, JavaScript et CSS.</p>
+      <a class="resume" href="/static/images/RapportFinalP3.pdf" download>Télécharger le rapport</a>
+      
+      
+      <div class="arrows-container">
+        <a href="{{ url_for('project2') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
+        <a href="{{ url_for('project4') }}"><i class="fas fa-chevron-right arrow-right"></i></a>
+      </div>
     </div>
 
-    <div class="arrows-container">
-      <a href="{{ url_for('project2') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
-      <a href="{{ url_for('project4') }}"><i class="fas fa-chevron-right arrow-right"></i></a>
-    </div>
+
   </body>
 </html>

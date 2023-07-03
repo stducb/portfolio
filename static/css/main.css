@@ -5,12 +5,12 @@ body, html {
    color: #FFF;
 }
 
-body h1 {
-   font-family: 'Archivo Black', sans-serif;
+body a,h1, h2 {
+   font-family: 'Roboto', sans-serif;
 }
 
 body p, ul, div {
-   font-family: 'Roboto', sans-serif;
+   font-family: Georgia, serif;
 }
 
 .navBar {
@@ -34,19 +34,21 @@ body p, ul, div {
    float: left;
 }
 
-.navBar a:hover,
-.navBar a.split:hover {
-   background-color: #141313;
-   color: white;
+@media (hover:hover){
+   .navBar a:hover,
+   .navBar a.split:hover {
+      background-color: #141313;
+      color: white;
+   }
 }
 
 .home {
    background-color: rgb(32, 32, 92);
    color: rgb(255, 255, 255);
-   padding-top: 15%;
+   padding-top: 20%;
    padding-left: 15%;
    padding-bottom: 25%;
-   margin-top: 22px;
+   font-size:x-large;
 }
 
 .resume {
@@ -79,20 +81,12 @@ body p, ul, div {
 .project {
    background-color: #f7f7f7; 
    color: black; 
+   text-align: justify; 
    padding-left: 15%; 
    padding-bottom: 15%; 
    padding-top: 10%; 
-}
-
-.about,
-.project,
-.skills {
-   text-align: justify; 
    padding-right: 15%; 
-}
-
-.about h1 {
-   color: black; 
+   z-index: 1;
 }
 
 .skills {
@@ -130,12 +124,12 @@ body p, ul, div {
 
 .projects img,
 .personalProjects img {
-   width: 300px; 
-   height: 200px;  
+   width: 350px; 
+   height: 250px;  
 }
 
 .project-title {
-   width: 300px;
+   width: 300px;  
 }
 
 .projects img:hover {

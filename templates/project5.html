@@ -18,24 +18,26 @@
         <a href="{{ url_for('main') }}#about">À propos</a>
       </div> 
 
+      <div class="project">
+        <h1>PROJET PERSONNEL</h1>
+      </div>
+
     <div class="content">
-        <h1>Creation d'un Portfolio</h1>
-        <p>Le projet avait pour objectif de pouvoir demontrer mon savoir-faire et mes compétences</p>
-        <br>Les technologies suivantes ont ete utilisées: <br>
-        <ul>
-            <li>Flask et Python pour créer l'application web.</li><br>
-            <li>HTML et CSS afin de créer la structure des pages et modifier l'apparence des contenus</li><br>        
-          </ul>     
-        
-          <a href="https://gitlab.com/stducb/portfolio" target="_blank">
-            <img src="{{ url_for('static', filename='images/gitlab.png') }}" alt="GitLab">
-          </a>
-            
+      <h1>Création d'un Portfolio</h1>
+      <p>Le projet avait pour objectif de mettre en avant mes compétences et mon savoir-faire de manière plus visuelle qu'un simple curriculum vitae. Le portfolio est divisé en quatre parties distinctes qui offrent une expérience complète. Tout d'abord, une page de présentation permet aux visiteurs de mieux me connaître. Ensuite, je présente une liste des langages de programmation que je maîtrise, ainsi qu'une liste des technologies que j'ai utilisées durant mon parcours scolaire, mettant en évidence mes connaissances techniques. Par la suite, les visiteurs peuvent explorer les projets auxquels j'ai participé, offrant ainsi des exemples concrets de mes réalisations et de mon expertise. Enfin, je mets à disposition deux liens pratiques : l'un pour me contacter par courriel et l'autre pour me retrouver sur LinkedIn, facilitant ainsi le contact direct avec moi.</p>
+      <p>Les technologies suivantes ont été utilisées pour développer le portfolio :</p>
+      <ul class="spaced-list">
+        <li>Flask et Python pour créer l'application web.</li>
+        <li>HTML et CSS afin de créer la structure des pages et modifier l'apparence des contenus.</li>
+      </ul>
+          <a class="resume" href="https://gitlab.com/stducb/portfolio" target="_blank"> Accéder au GitLab du projet</a>
+          
+      <div class="arrows-container">
+        <a href="{{ url_for('project4') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
+        <a href="{{ url_for('main')}}#project "><i class="fas fa-chevron-right arrow-right"></i></a>
+      </div>  
     </div>
 
-    <div class="arrows-container">
-      <a href="{{ url_for('project4') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
-      <a href="{{ url_for('main')}}#project "><i class="fas fa-chevron-right arrow-right"></i></a>
-    </div>
+
   </body>
 </html>

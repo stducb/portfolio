@@ -1,19 +1,26 @@
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body a,h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body p, ul, div {
+  font-family: Georgia, serif;
 }
 
 .navBar {
   background-color: rgb(231, 231, 176);
   overflow: hidden;
-  position: fixed; /* Changed: Set position to fixed */
+  position: fixed;
   width: 100%;
   top: 0;
-  
 }
 
 .navBar a {
@@ -27,46 +34,55 @@ body {
 
 .navBar a.split {
   float: left;
-  color: black;
 }
 
-.navBar a:hover {
-  background-color: #141313;
-  color: white;
+@media (hover:hover){
+  .navBar a:hover,
+  .navBar a.split:hover {
+     background-color: #141313;
+     color: white;
+  }
 }
 
-.navBar a.split:hover {
-  background-color: #141313;
-  color: white;
+.project {
+  margin-top: 50px;
 }
 
 .content {
-  width: 90vw;
+  width: 70vw;
   height: 90%;
   border-radius: 5%;
   background-color: beige;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-top: 50px;
+  padding-top: 30px;
   padding-left: 10%;
   padding-right: 10%;
+  margin-bottom: 50px;
   text-align: justify;
+  position: relative; 
+  padding-bottom: 50px; 
+  overflow: auto;
 }
 
 .content h1 {
   text-align: center;
 }
 
-.content img{
+.content img {
   width: 100px;
-  height: 30px
+  height: 30px;
+}
+
+.spaced-list li {
+  margin-bottom: 10px;
 }
 
 .arrows-container {
-  position: fixed;
-  bottom: 20px;
+  position: absolute; 
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
+  bottom: 10px; 
 }
 
 .arrow-left,

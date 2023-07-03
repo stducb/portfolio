@@ -18,30 +18,36 @@
         <a href="{{ url_for('main') }}#about">À propos</a>
       </div> 
 
+      <div class="project">
+        <h1>PROJET ACADÉMIQUE</h1>
+      </div>
     <div class="content">
-        <h1>INF8985 : Projet final en intelligence artificielle</h1>
-        <p>Le projet avait pour objectif de développer une solution permettant de détecter et d'évaluer la taille réelle des poissons dans une image. Il se divisait en trois grandes sphères : la segmentation des poissons, l'estimation de la pose du poisson et l'estimation de sa profondeur dans l'image. Les objectifs spécifiques étaient les suivants :
-          <ul>
-            <li>Détecter le poisson dans une photo capturée par l'utilisateur.</li><br>
-            <li>Créer une application permettant de capturer une image du poisson.</li><br>
-            <li>Évaluer la distance entre le poisson et la caméra afin de calculer sa taille réelle.</li>
-          </ul>  
-          <br>Les technologies suivantes ont ete utilisees: <br>
-          <ul>
-              <li>Flask pour créer une application web qui permet aux utilisateurs de soumettre des images de poissons et d'obtenir les résultats de détection et de mesure de taille.</li><br>
-              <li>PyTorch pour configurer et entraîner des modèles d'apprentissage profond pour la détection et la segmentation des poissons.</li><br>        
-              <li>NumPy pour manipuler les données multidimensionnelles nécessaires à l'entraînement des modèles</li><br>       
-              <li>OpenCV pour traiter et manipuler les images des poissons.</li><br>
-              <li>SwiftUI, Foundation et AVFoundation pour développer l'application mobile de capture de photos et d'extraction de profondeur à l'aide du LiDAR</li><br>
-              <li>Detectron2 pour la tâche de segmentation des poissons.</li>
-          </ul>
+      <h1>INF8985 : Projet final en intelligence artificielle</h1>
+      <p>Le projet avait pour objectif de développer une solution permettant de détecter et d'évaluer la taille réelle des poissons dans une image. Il se divisait en trois grandes sphères : la segmentation des poissons, l'estimation de la pose du poisson et l'estimation de sa profondeur dans l'image. Les objectifs spécifiques étaient les suivants :</p>
+      <ul class="spaced-list">
+        <li>Détecter le poisson dans une photo capturée par l'utilisateur.</li>
+        <li>Créer une application permettant de capturer une image du poisson.</li>
+        <li>Évaluer la distance entre le poisson et la caméra afin de calculer sa taille réelle.</li>
+      </ul>  
+      <p>Les technologies suivantes ont été utilisées :</p>
+      <ul class="spaced-list">
+        <li>Flask pour créer une application web qui permet aux utilisateurs de soumettre des images de poissons et d'obtenir les résultats de détection et de mesure de taille.</li>
+        <li>PyTorch pour configurer et entraîner des modèles d'apprentissage profond pour la détection et la segmentation des poissons.</li>
+        <li>NumPy pour manipuler les données multidimensionnelles nécessaires à l'entraînement des modèles.</li>
+        <li>OpenCV pour traiter et manipuler les images des poissons.</li>
+        <li>SwiftUI, Foundation et AVFoundation pour développer l'application mobile de capture de photos et d'extraction de profondeur à l'aide du LiDAR.</li>
+        <li>Detectron2 pour la tâche de segmentation des poissons.</li>
+      </ul>
+      
           <a class="resume" href="/static/images/RapportFinalP4.pdf" download> Télécharger le rapport </a>
         </p>
+
+        <div class="arrows-container">
+          <a href="{{ url_for('project3') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
+          <a href="{{ url_for('project5') }}"><i class="fas fa-chevron-right arrow-right"></i></a>
+        </div>
     </div>
 
-    <div class="arrows-container">
-      <a href="{{ url_for('project3') }}"><i class="fas fa-chevron-left arrow-left"></i></a>
-      <a href="{{ url_for('project5') }}"><i class="fas fa-chevron-right arrow-right"></i></a>
-    </div>
+
   </body>
 </html>
